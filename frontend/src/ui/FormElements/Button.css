@@ -1,0 +1,80 @@
+/* Custom button styles with Ant Design look and feel */
+.custom-button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-flex; /* Using flexbox to align text and icon */
+  align-items: center; /* Ensures the text and icon are vertically aligned */
+  justify-content: center; /* Centers the content */
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover,
+.custom-button:focus,
+.custom-button:active {
+  background-color: #ff4382;
+  border-color: #ff4382;
+}
+
+.custom-button--inverse {
+  background: transparent;
+  color: #ff0055;
+  border-color: #ff0055;
+}
+
+.custom-button--inverse:hover,
+.custom-button--inverse:active {
+  background: #ff0055;
+  color: white;
+}
+
+.custom-button--danger {
+  background: #830000;
+  border-color: #830000;
+}
+
+.custom-button--danger:hover,
+.custom-button--danger:active {
+  background: #f34343;
+  border-color: #f34343;
+}
+
+.custom-button:disabled,
+.custom-button:hover:disabled,
+.custom-button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Custom size variations */
+.custom-button--small {
+  font-size: 0.8rem;
+}
+
+.custom-button--big {
+  font-size: 1.5rem;
+}
+
+/* Adjust icon size inside the button */
+.custom-button .anticon {
+  font-size: 1.2rem; /* Icon size can be adjusted here */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Ensure text is always visible */
+.custom-button span {
+  display: inline-block;
+  margin-left: 0.5rem; /* Space between icon and text */
+}
+
+/* Ensures the text and icon are aligned and always visible */
+.custom-button .anticon,
+.custom-button span {
+  display: inline-block; /* Both the icon and text are inline */
+}

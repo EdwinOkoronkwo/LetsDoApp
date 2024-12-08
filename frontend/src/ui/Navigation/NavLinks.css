@@ -1,0 +1,88 @@
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 1rem;
+}
+
+.nav-links a,
+.nav-links button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: #292929 !important; /* Default text color */
+  background: transparent;
+  padding: 0.5rem;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, color 0.3s ease !important; /* Smooth transition for background and text */
+}
+
+.nav-links a svg,
+.nav-links button svg {
+  margin-right: 0.5rem; /* Space between icon and text */
+  fill: currentColor !important; /* Ensure icon color is tied to the text color */
+}
+
+/* Ensure the text and icon are visible at all times */
+.nav-links a,
+.nav-links button {
+  color: #292929 !important; /* Set the default text color */
+}
+
+.nav-links a svg,
+.nav-links button svg {
+  fill: currentColor !important; /* Ensure icon color is tied to the text color */
+}
+
+/* Hover effects */
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links button:hover,
+.nav-links button:active {
+  background: rgb(
+    240,
+    120,
+    240
+  ) !important; /* Subtle background change on hover */
+  border-color: #292929 !important;
+  color: #000000 !important; /* Darken text and icon on hover */
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    color: white !important; /* Default color for text and icon on larger screens */
+    border: 1px solid white !important; /* White border for contrast */
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links button:hover,
+  .nav-links button:active {
+    background: rgb(240, 120, 240) !important;
+    color: #292929 !important; /* On hover, text color becomes dark */
+  }
+
+  .nav-links button svg {
+    transition: all 0.3s ease !important;
+    fill: currentColor !important; /* Keep icon color in sync with text color */
+  }
+}

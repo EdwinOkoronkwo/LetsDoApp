@@ -1,0 +1,74 @@
+/* General form control styles */
+.form-control {
+  margin: 1rem 0;
+}
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+}
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  font: inherit;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.15rem 0.25rem;
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  background: #ebebeb;
+  border-color: #510077;
+}
+
+/* Invalid form control styles */
+.form-control--invalid label,
+.form-control--invalid p {
+  color: red;
+}
+.form-control--invalid input,
+.form-control--invalid textarea {
+  border-color: red;
+  background: #ffd1d1;
+}
+
+/* Custom Input Container */
+.custom-input-container {
+  margin-bottom: 16px;
+}
+.custom-input-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Error text styles */
+.error-text {
+  color: #ff4d4f; /* Ant Design error color */
+  margin-top: 4px;
+}
+
+/* Ant Design specific overrides */
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  background-color: #fff; /* Default white background */
+}
+
+/* Error states for Ant Design inputs, selects, and date pickers */
+.ant-input-status-error,
+.ant-select-status-error .ant-select-selector,
+.ant-picker-status-error {
+  background-color: #ffe6e6 !important; /* Red background for error */
+  border-color: #ff4d4f !important; /* Red border for error */
+}
+
+/* Error text in Ant Design form items */
+.ant-form-item-explain-error {
+  color: #ff4d4f; /* Red error message text */
+}

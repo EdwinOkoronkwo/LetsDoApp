@@ -1,0 +1,153 @@
+.main-navigation__menu-btn {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: #333; /* Matches Ant Design's default text color */
+}
+
+.main-navigation__title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-navigation__title a {
+  text-decoration: none;
+  color: inherit; /* Matches parent color for consistency */
+}
+
+.main-navigation__header-nav {
+  display: none;
+}
+
+.main-navigation__drawer-nav {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__menu-btn {
+    display: none;
+  }
+
+  .main-navigation__header-nav {
+    display: block;
+  }
+}
+
+.main-navigation__left {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__title {
+  margin-right: 20px;
+}
+
+.main-navigation__links {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation__links li {
+  margin-right: 20px;
+}
+
+.main-navigation__links a,
+.main-navigation__add-task-btn,
+.main-navigation__auth-btn {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.main-navigation__links a:hover,
+.main-navigation__add-task-btn:hover,
+.main-navigation__auth-btn:hover {
+  background-color: #1890ff; /* Ant Design primary blue color */
+  color: #fff; /* White text for contrast */
+}
+
+.main-navigation__add-task-btn,
+.main-navigation__auth-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-navigation__drawer-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.main-navigation__drawer-nav li {
+  margin: 10px 0;
+}
+
+.avatar {
+  margin-left: 20px;
+}
+
+.main-navigation__search {
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .main-navigation__menu-btn {
+    display: block;
+  }
+
+  .main-navigation__links {
+    display: none;
+  }
+}
+
+.main-navigation__links button,
+.main-navigation__drawer-nav button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-navigation__links button:hover,
+.main-navigation__drawer-nav button:hover {
+  color: #1890ff; /* Optional: Change color on hover */
+}
+
+.main-navigation__links a,
+.main-navigation__drawer-nav a {
+  background: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-navigation__links a:hover,
+.main-navigation__drawer-nav a:hover {
+  color: #1890ff; /* Optional: Change color on hover */
+}

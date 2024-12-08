@@ -1,0 +1,41 @@
+.user-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding-top: -10%;
+}
+
+.user-detail__card {
+  width: 400px; /* Slightly wider */
+  border: 20px solid white; /* Large white border */
+  text-align: center;
+  border-radius: 15px;
+  background: purple;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-detail__card:hover {
+  background: #1890ff; /* Blue background on hover */
+  color: black; /* Text becomes black on hover */
+  border-color: white; /* Border remains white */
+}
+
+.user-detail__image {
+  margin-bottom: 1.5rem;
+}
+
+.user-detail__info h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+  color: inherit; /* Inherit text color for hover effect */
+}
+
+.user-detail__info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: inherit; /* Inherit text color for hover effect */
+}
